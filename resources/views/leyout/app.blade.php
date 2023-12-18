@@ -7,7 +7,12 @@
     <title>Laravel base @yield('title', 'template')</title>
 </head>
 <body>
-    @yield('title','TITOLO')
+    @include('../partials/header')
+
+    @yield('title','TITOLO TROVATO')
+
     @yield('content')
+
+    @include('../partials/footer')
 </body>
 </html>
